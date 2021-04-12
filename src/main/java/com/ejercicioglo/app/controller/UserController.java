@@ -34,10 +34,10 @@ public class UserController {
     public ResponseEntity<?> read(@PathVariable(value = "id") Long id){
         Optional<User> optionalUser = userService.findById(id);
 
-        if (!optionalUser.isPresent()) {
-            return ResponseEntity.notFound().build();
+        if (optionalUser.isPresent()) {
+            return ResponseEntity.ok(optionalUser);
         }
-        return ResponseEntity.ok(optionalUser);
+        return ResponseEntity.notFound().build();
     }
 
     //Update an user
