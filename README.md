@@ -20,6 +20,10 @@ It is built with the following technology:
      
 # 2. Steps to run the application
 
+> Build and Run the application
+
+    > run the main method from CursoSpringbootApplication.java as a Spring boot application
+
 > Open H2 console
 
       > http://localhost:8080/h2-console      
@@ -27,10 +31,6 @@ It is built with the following technology:
       > in the application.properties file are the username and password
 
 ![alt text](https://github.com/glorycaridad91/RestAPIUserWithSpringBoot/blob/feature/APIRestUser/src/main/resources/H2%20database.png) 
-
-> Build and Run the application
-
-    > run the main method from CursoSpringbootApplication.java as a Spring boot application
 
 
 # 3. For API document
