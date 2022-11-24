@@ -2,7 +2,6 @@ package com.ejercicioglo.app.controller;
 
 import com.ejercicioglo.app.entity.User;
 import com.ejercicioglo.app.service.UserService;
-import net.bytebuddy.agent.builder.AgentBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +15,7 @@ import java.util.stream.StreamSupport;
 
 
 @RestController
-@RequestMapping("api/users")
+@RequestMapping("api/v1/users")
 public class UserController {
 
     @Autowired
@@ -71,12 +70,9 @@ public class UserController {
     //Read all Users
     @GetMapping
     public List<User> readAll(){
-        List<User> users = (List<User>) StreamSupport
+        return (List<User>) StreamSupport
                 .stream(userService.findAll().spliterator(), false)
                 .collect(Collectors.toList());
-
-        return users;
-
     }
 }
 
