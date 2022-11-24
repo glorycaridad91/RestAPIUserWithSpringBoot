@@ -26,6 +26,8 @@ It is built with the following technology:
         
       > in the application.properties file are the username and password
 
+![alt text](https://github.com/glorycaridad91/RestAPIUserWithSpringBoot/blob/feature/APIRestUser/src/main/resources/H2%20database.png) 
+
 > Build and Run the application
 
     > run the main method from CursoSpringbootApplication.java as a Spring boot application
@@ -40,3 +42,6 @@ It is built with the following technology:
 
     OpenAPI 3.0
        > http://localhost:8080/swagger-ui.html
+
+![alt text](https://github.com/glorycaridad91/RestAPIUserWithSpringBoot/blob/feature/APIRestUser/src/main/resources/endpoints.png)
+
